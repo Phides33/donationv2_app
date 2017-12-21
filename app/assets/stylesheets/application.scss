@@ -1,0 +1,9 @@
+// Importer les librairies externes
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Importer les partiales de config communes
+// @import "config/partial_name";  pour chaque partiale
+
+// Importer les composants
+@import "components/index";
