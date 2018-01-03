@@ -3,7 +3,8 @@
 @import "bootstrap";
 
 // Importer les partiales de config communes
-// @import "config/partial_name";  pour chaque partiale
+@import "config/colors";
+@import "config/fonts";
 
 // Importer les composants
 @import "components/index";
