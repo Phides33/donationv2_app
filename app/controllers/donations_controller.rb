@@ -6,8 +6,14 @@ class DonationsController < ApplicationController
   end
 
   def create
-    @donation = Donation.new(don_params)
-    @donation.save
+    @donation = Donation.new
+    @donation.amount_bracket = don_params[:amount_bracket].to_i
+    if @donation.save
+      # ça marche > rediriger sur question suivante
+    else
+      flash.now[:alert] = @donation.errors[:amount_bracket][1]
+      render :new
+    end
   end
 
   private

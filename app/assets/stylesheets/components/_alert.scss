@@ -13,3 +13,8 @@
 .alert-warning {
   background: $red;
 }
+
+// Ne pas afficher les messages d'erreur de simple form
+.help-block {
+  display: none;
+}
