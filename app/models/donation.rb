@@ -1,5 +1,6 @@
 class Donation < ApplicationRecord
   has_many :users
+  has_many :profiles
 
   enum amount_bracket: ["moins de 50€", "moins de 100€", "moins de 200€",
 "moins de 500€", "500€ et plus" ]

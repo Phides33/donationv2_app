@@ -1,0 +1,6 @@
+<%= simple_form_for @profile do |d| %>
+  <%= d.input :full_name,
+        label: "Combien vous appelez-vous ?",
+        wrapper_html: { class: 'q' } %>
+  <%= d.button :submit, "Confirmer et c'en sera fini !" %>
+<% end %>
